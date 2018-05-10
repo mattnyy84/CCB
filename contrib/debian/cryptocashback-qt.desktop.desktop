@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=CCB
+Comment=CCB P2P Cryptocurrency
+Exec=cryptocashback-qt %u
+Terminal=false
+Type=Application
+Icon=cryptocashback128
+MimeType=x-scheme-handler/cryptocashback;
+Categories=Office;Finance;
+Name[en_US]=cryptocashback-qt.desktop

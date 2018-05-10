@@ -1,0 +1,26 @@
+[Unit]
+Description=CCB's distributed currency daemon
+After=network.target
+
+[Service]
+User=cryptocashback
+Group=cryptocashback
+
+Type=forking
+PIDFile=/var/lib/cryptocashbackd/cryptocashbackd.pid
+
+ExecStart=/usr/bin/cryptocashbackd -daemon -pid=/var/lib/cryptocashbackd/cryptocashbackd.pid \
+          -conf=/etc/cryptocashback/cryptocashback.conf -datadir=/var/lib/cryptocashbackd
+
+ExecStop=-/usr/bin/cryptocashback-cli -conf=/etc/cryptocashback/cryptocashback.conf \
+         -datadir=/var/lib/cryptocashbackd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
