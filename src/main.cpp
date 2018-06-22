@@ -1620,16 +1620,23 @@ double ConvertBitsToDouble(unsigned int nBits)
 
 int64_t GetBlockValue(int nHeight)
 {
- 
-	if (nHeight == 1) return 500000 * COIN;
-		
-	int64_t nSubsidy;
+ 	int64_t nSubsidy = 2 * COIN;
 	
-	if( nHeight > 1 && nHeight <= 15000 ) {
-	        nSubsidy = 1 * COIN;
-	} else {
-		nSubsidy = 100 * COIN;
-	}
+	
+ 
+     if (nHeight == 1) {
+       nSubsidy = 500000 * COIN;
+     } else if (nHeight > 1 && nHeight <= 3000) {
+       nSubsidy = 1 * COIN;
+     } else if (nHeight > 3000 && nHeight <= 98800) {
+       nSubsidy = 100 * COIN;
+     } else if (nHeight > 98800 && nHeight <= 132000) {
+       nSubsidy = 72 * COIN;
+     } else if (nHeight > 13200 && nHeight <= 127600){
+       nSubsidy = 36 * COIN;
+     } else if (nHeight > 127600 && nHeight <= 142000) {
+       nSubsidy = 18 * COIN;
+
 	
     return nSubsidy;
 
@@ -1641,7 +1648,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
 	int64_t ret = 0;
 	
-        ret = blockValue * 0.7;
+        ret = blockValue * 0.75;
 	
 	return ret;
 }
