@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/CryptoCashBack-Hub/CCB.git"
+- "url": "https://github.com/MotoAcidic/CCB.git"
   "dir": "CCB"
 files: []
 script: |
