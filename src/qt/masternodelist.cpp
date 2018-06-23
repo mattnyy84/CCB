@@ -381,11 +381,11 @@ void MasternodeList::on_startMissingButton_clicked()
 
         if (!ctx.isValid()) return; // Unlock wallet was cancelled
 
-        StartAll("start-missing");
+       // StartAll("start-missing");
         return;
     }
 
-    StartAll("start-missing");
+    //StartAll("start-missing");
 }
 
 void MasternodeList::on_tableWidgetMyMasternodes_itemSelectionChanged()
