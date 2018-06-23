@@ -23,8 +23,8 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
 Homepage:http://bit.cryptocashbacks/
-Vcs-Git: git://github.com/CryptoCashBack/CCB
-Vcs-Browser: http://github.com/CryptoCashBack/CCB
+Vcs-Git: git://github.com/CryptoCashBack-Hub/CCB
+Vcs-Browser: http://github.com/CryptoCashBack-Hub/CCB
 
 Package: cryptocashbackd
 Architecture: any
