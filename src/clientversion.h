@@ -12,7 +12,7 @@
 /**
  * client versioning and copyright year
  */
-//CoinRevival Team Take Over
+//CoinRevival Team
 //! These need to be macros, as clientversion.cpp's and cryptocashback*-res.rc's voodoo requires it
 #define CLIENT_VERSION_MAJOR 2
 #define CLIENT_VERSION_MINOR 0
