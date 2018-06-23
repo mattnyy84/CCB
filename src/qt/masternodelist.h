@@ -38,7 +38,7 @@ public:
     void setClientModel(ClientModel* clientModel);
     void setWalletModel(WalletModel* walletModel);
     void StartAlias(std::string strAlias);
-    void StartAll(std::string strCommand = "start-all");
+   // void StartAll(std::string strCommand = "start-all");
 
 private:
     QMenu* contextMenu;
@@ -64,7 +64,7 @@ private Q_SLOTS:
     void showContextMenu(const QPoint&);
     void on_filterLineEdit_textChanged(const QString& strFilterIn);
     void on_startButton_clicked();
-    void on_startAllButton_clicked();
+   // void on_startAllButton_clicked();
     void on_startMissingButton_clicked();
     void on_tableWidgetMyMasternodes_itemSelectionChanged();
     void on_UpdateButton_clicked();

@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/cryptocashback/cryptocashback.git"
+- "url": "https://github.com/CryptoCashBack-Hub/CCB.git"
   "dir": "cryptocashback"
 files:
 - "MacOSX10.11.sdk.tar.gz"

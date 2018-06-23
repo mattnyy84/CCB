@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/CryptoCashBack/CCB.SIGS.git"
+- "url": "https://github.com/CryptoCashBack-Hub/CCB.SIGS.git"
   "dir": "signature"
 files:
 - "cryptocashback-osx-unsigned.tar.gz"
